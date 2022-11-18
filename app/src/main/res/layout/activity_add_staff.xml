@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddStaff"
+    android:orientation="vertical"
+    android:background="#773030">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD STAFF"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="#FFFF"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/namaAS"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/ic_baseline_account_circle"
+            android:hint="Masukkan Nama ...."/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></RelativeLayout>
+        <EditText
+            android:id="@+id/usernameAS"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/ic_baseline_account_circle"
+            android:hint="Masukkan Email ...."
+            android:inputType="textEmailAddress"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></RelativeLayout>
+        <EditText
+            android:id="@+id/pasAS"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+            android:hint="Masukkan Password ...."
+            android:inputType="textPassword"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></RelativeLayout>
+        <EditText
+            android:id="@+id/conpasAS"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+            android:hint="Confirm Password ...."
+            android:inputType="textPassword"/>
+        <TextView
+            android:id="@+id/ConfirmPassAlertAS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#B71C1C"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></RelativeLayout>
+
+        <Button
+            android:id="@+id/addASBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="TAMBAH"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:backgroundTint="#58B35C"/>
+
+    </LinearLayout>
+
+</LinearLayout>
